@@ -1,0 +1,29 @@
+form {
+  width: 350px;
+  margin: 50px auto;
+  text-align: center;
+  input, label {
+    display: block;
+    font-size: 20px;
+  }
+  input, textarea {
+    margin: 0 auto 15px;
+    width: 100%;
+  }
+  textarea {
+    height: 200px;
+    font-size: 16px;
+  }
+  input.button {
+    border: none;
+    padding: 15px;
+    background: silver;
+    transition: background 0.5s;
+    border-radius: 10px;
+    &:hover {
+      background: darken(silver, 10%);
+      transition: background 0.5s;
+      cursor: pointer;
+    }
+  }
+}

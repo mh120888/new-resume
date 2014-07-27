@@ -1,0 +1,11 @@
+<h2>Send Me a Message</h2>
+
+<%= form_tag send_email_path do %>
+  <%= label_tag 'Your Name' %>
+  <%= text_field_tag :name %>
+  <%= label_tag 'Your Email' %>
+  <%= text_field_tag :email %>
+  <%= label_tag 'Body' %>
+  <%= text_area_tag :body %>
+  <%= submit_tag 'Email Me!', class: 'button' %>
+<% end %>

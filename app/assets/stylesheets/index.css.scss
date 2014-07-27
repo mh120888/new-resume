@@ -1,0 +1,235 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  color: #333;
+}
+div#main-content {
+  text-align: center;
+  margin-left: 80px;
+}
+h1#name {
+  font-size: 150px;
+  font-weight: 100;
+  margin-bottom: 0px;
+}
+p.tagline {
+  font-weight: 100;
+}
+
+/*resume*/
+
+div#resume-content {
+  margin: 60px auto;
+  width: 75%;
+  text-align: left;
+  font-size: 20px;
+}
+
+div#resume-content h2 {
+  font-size: 45px;
+}
+
+div#resume-content h3 {
+  font-size: 30px;
+}
+
+ul.skills {
+  margin-top: 0px;
+}
+
+ul.skills.left {
+  display: inline-block;
+}
+
+div.job {
+  margin-bottom: 20px;
+}
+
+span.job-dates, span.school-dates {
+  float: right;
+}
+
+span.job-location, span.school-location {
+  font-weight: 100;
+  font-style: italic;
+}
+
+span.job-title, span.school-degree {
+  font-weight: 100;
+}
+
+ul.job-duties {
+  margin-top: 0px;
+}
+
+ul.job-duties li {
+  font-size: 18px;
+  font-weight: 100;
+  list-style-type: square;
+}
+
+a.expand-details {
+  color: #333;
+  text-decoration: none;
+}
+
+a.expand-details i {
+  margin-left: 10px;
+}
+
+div.school {
+  margin-bottom: 15px;
+}
+
+/*sidebar*/
+div#sidebar {
+  color: white;
+  width: 80px;
+  background-color: #333;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+div#sidebar-items {
+  margin-top: 150px;
+}
+div.item {
+  height: 80px;
+  width: 80px;
+  transition: width 0.5s;
+}
+div.item span.label {
+  color: white;
+  position: fixed;
+  margin-top: 24px;
+  margin-left: 12px;
+  font-size: 20px;
+}
+div.item i {
+  color: white;
+  font-size: 40px;
+  margin: 20px;
+}
+div.item i.fa-envelope-o {
+  font-size: 37px;
+}
+div.item.hover {
+  width: 175px;
+  transition: width 0.5s;
+}
+/*general*/
+
+.blue {
+  background-color: #225067;
+}
+.green {
+  background-color: #93D581;
+}
+.purple {
+  background-color: #683BB0;
+}
+.pink {
+  background-color: #C1445D;
+}
+.yellow {
+  background-color: #F2CE08;
+}
+.right {
+  float: right;
+}
+.hide {
+  display: none;
+}
+.small-screen-only {
+  display: none;
+}
+
+div.flash.notice {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*bottom bar*/
+
+div#bottom-bar {
+  display: none;
+}
+
+/********************************* MEDIA QUERIES *********************************/
+
+@media (max-width: 1040px) {
+  div#resume-content {
+    margin: 60px 65px 0 65px;
+    width: 85%;
+  }
+  div#home-content h1 {
+    font-size: 100px;
+  }
+  div#home-content p.tagline {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 920px) {
+  div#resume-content {
+    font-size: 16px;
+  }
+  ul.job-duties li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 750px) {
+  div#sidebar {
+    display: none;
+  }
+  div#main-content {
+    margin-left: 0px;
+    margin-top: 130px;
+  }
+  div#bottom-bar {
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+  }
+  div#bottom-bar-items {
+    margin-left: -6px;
+    margin-right: -3px;
+  }
+  div#bottom-bar-items div.item {
+    width: 20%;
+    display: inline-block;
+    margin: 0 -3px;
+    position: relative;
+  }
+  div#bottom-bar-items div.item.pink {
+    position: relative;
+    top: -3px;
+    right: -3px;
+  }
+  div#resume-content {
+    margin: 0px 10px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 650px) {
+  span.job-company, span.school-name {
+    display: block;
+  }
+}
+
+@media (max-width: 410px) {
+  ul.skills span.small-screen-only {
+    display: inline;
+  }
+  .hide-for-small {
+    display: none;
+  }
+}
