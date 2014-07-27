@@ -174,7 +174,12 @@ div#bottom-bar {
     left: 0;
     text-align: center;
   }
+  div#bottom-bar-items {
+    margin-left: -6px;
+    margin-right: -3px;
+  }
   div#bottom-bar-items div.item {
+    width: 20%;
     display: inline-block;
     margin: 0 -3px;
   }
