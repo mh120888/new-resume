@@ -18,7 +18,7 @@ p.tagline {
 /*resume*/
 
 div#resume-content {
-  margin: 60px auto 0px;
+  margin: 60px auto;
   width: 75%;
   text-align: left;
   font-size: 20px;
@@ -32,20 +32,28 @@ div#resume-content h3 {
   font-size: 30px;
 }
 
+ul.skills {
+  margin-top: 0px;
+}
+
+ul.skills.left {
+  display: inline-block;
+}
+
 div.job {
   margin-bottom: 20px;
 }
 
-span.job-dates {
+span.job-dates, span.school-dates {
   float: right;
 }
 
-span.job-location {
+span.job-location, span.school-location {
   font-weight: 100;
   font-style: italic;
 }
 
-span.job-title {
+span.job-title, span.school-degree {
   font-weight: 100;
 }
 
@@ -66,6 +74,10 @@ a.expand-details {
 
 a.expand-details i {
   margin-left: 10px;
+}
+
+div.school {
+  margin-bottom: 15px;
 }
 
 /*sidebar*/
@@ -127,12 +139,17 @@ div.item.hover {
 .hide {
   display: none;
 }
+.small-screen-only {
+  display: none;
+}
 
 /*bottom bar*/
 
 div#bottom-bar {
   display: none;
 }
+
+/********************************* MEDIA QUERIES *********************************/
 
 @media (max-width: 1040px) {
   div#resume-content {
@@ -182,6 +199,7 @@ div#bottom-bar {
     width: 20%;
     display: inline-block;
     margin: 0 -3px;
+    position: relative;
   }
   div#bottom-bar-items div.item.pink {
     position: relative;
@@ -191,5 +209,20 @@ div#bottom-bar {
   div#resume-content {
     margin: 0px 10px;
     width: 95%;
+  }
+}
+
+@media (max-width: 650px) {
+  span.job-company, span.school-name {
+    display: block;
+  }
+}
+
+@media (max-width: 410px) {
+  ul.skills span.small-screen-only {
+    display: inline;
+  }
+  .hide-for-small {
+    display: none;
   }
 }
