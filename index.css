@@ -1,0 +1,154 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  color: #333;
+}
+div#main-content {
+  text-align: center;
+  margin-left: 80px;
+}
+h1#name {
+  font-size: 150px;
+  font-weight: 100;
+  margin-bottom: 0px;
+}
+p.tagline {
+  font-weight: 100;
+}
+
+/*resume*/
+
+div#resume-content {
+  margin: 60px auto 0px;
+  width: 75%;
+  text-align: left;
+  font-size: 20px;
+}
+
+div#resume-content h2 {
+  font-size: 45px;
+}
+
+div#resume-content h3 {
+  font-size: 30px;
+}
+
+div.job {
+  margin-bottom: 20px;
+}
+
+span.job-dates {
+  float: right;
+}
+
+span.job-location {
+  font-weight: 100;
+  font-style: italic;
+}
+
+span.job-title {
+  font-weight: 100;
+}
+
+ul.job-duties {
+  margin-top: 0px;
+}
+
+ul.job-duties li {
+  font-size: 18px;
+  font-weight: 100;
+  list-style-type: square;
+}
+
+a.expand-details {
+  color: #333;
+  text-decoration: none;
+}
+
+a.expand-details i {
+  margin-left: 10px;
+}
+
+/*sidebar*/
+div#sidebar {
+  color: white;
+  width: 80px;
+  background-color: #333;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+div#sidebar-items {
+  margin-top: 150px;
+}
+div.item {
+  height: 80px;
+  width: 80px;
+  transition: width 0.5s;
+}
+div.item span.label {
+  color: white;
+  position: fixed;
+  margin-top: 24px;
+  margin-left: 12px;
+  font-size: 20px;
+}
+div.item i {
+  color: white;
+  font-size: 40px;
+  margin: 20px;
+}
+div.item i.fa-envelope-o {
+  font-size: 37px;
+}
+div.item.hover {
+  width: 175px;
+  transition: width 0.5s;
+}
+/*general*/
+.blue {
+  background-color: #225067;
+}
+.green {
+  background-color: #93D581;
+}
+.purple {
+  background-color: #683BB0;
+}
+.pink {
+  background-color: #C1445D;
+}
+.yellow {
+  background-color: #F2CE08;
+}
+.right {
+  float: right;
+}
+.hide {
+  display: none;
+}
+
+@media (max-width: 1040px) {
+  div#resume-content {
+    margin: 60px 65px 0 65px;
+    width: 85%;
+  }
+}
+
+@media (max-width: 920px) {
+  div#resume-content {
+    font-size: 16px;
+  }
+  ul.job-duties li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 750px) {
+  div#sidebar {
+    display: none;
+  }
+  div#main-content {
+    margin-left: 0px;
+  }
+}
