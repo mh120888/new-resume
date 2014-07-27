@@ -128,10 +128,22 @@ div.item.hover {
   display: none;
 }
 
+/*bottom bar*/
+
+div#bottom-bar {
+  display: none;
+}
+
 @media (max-width: 1040px) {
   div#resume-content {
     margin: 60px 65px 0 65px;
     width: 85%;
+  }
+  div#home-content h1 {
+    font-size: 100px;
+  }
+  div#home-content p.tagline {
+    font-size: 40px;
   }
 }
 
@@ -150,5 +162,29 @@ div.item.hover {
   }
   div#main-content {
     margin-left: 0px;
+    margin-top: 130px;
+  }
+  div#bottom-bar {
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+  }
+  div#bottom-bar-items div.item {
+    display: inline-block;
+    margin: 0 -3px;
+  }
+  div#bottom-bar-items div.item.pink {
+    position: relative;
+    top: -3px;
+    right: -3px;
+  }
+  div#resume-content {
+    margin: 0px 10px;
+    width: 95%;
   }
 }
