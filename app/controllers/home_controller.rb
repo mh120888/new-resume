@@ -5,7 +5,7 @@ class HomeController < ApplicationController
 
   def send_email
     if params[:email] && params[:body] && params[:name]
-      MessageMailer.message_me(email: params[:email], body: params[:body], name: params[:name]).deliver
+      MessageMailer.mail_me(email: params[:email], body: params[:body], name: params[:name]).deliver
       redirect_to root_path
     else
       redirect_to root_path
