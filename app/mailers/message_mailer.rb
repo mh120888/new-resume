@@ -4,7 +4,6 @@ class MessageMailer < ActionMailer::Base
     @email = args[:email]
     @name = arg[:name]
     @body = args[:body]
-    @subject = args[:subject]
-    mail(to: 'matthew.alan.higgins@gmail.com', subject: @subject, from: @email, name: @name)
+    mail(to: 'matthew.alan.higgins@gmail.com', subject: 'Message from Resume Site', from: @email, name: @name)
   end
 end
