@@ -13,6 +13,7 @@ h1#name {
 }
 p.tagline {
   font-weight: 100;
+  font-size: 40px;
 }
 
 /*resume*/
@@ -207,6 +208,10 @@ div#bottom-bar {
     display: inline-block;
     margin: 0 -3px;
     position: relative;
+    i {
+      margin: 0;
+      padding-top: 16px;
+    }
   }
   div#bottom-bar-items div.item.pink {
     position: relative;
@@ -223,6 +228,14 @@ div#bottom-bar {
   span.job-company, span.school-name {
     display: block;
   }
+  div#home-content {
+    h1#name {
+      font-size: 50px;
+    }
+    p.tagline {
+      font-size: 24px;
+    }
+  }
 }
 
 @media (max-width: 410px) {
@@ -231,5 +244,8 @@ div#bottom-bar {
   }
   .hide-for-small {
     display: none;
+  }
+  div#resume-content h2 {
+    font-size: 40px;
   }
 }
